@@ -8,9 +8,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "base-fdzhuq"
+      == "base-ofrent"
   labels:
-    appstudio.openshift.io/application: application-qyul
+    appstudio.openshift.io/application: application-pmlm
     appstudio.openshift.io/component: component-sample-python-basic-oci-docker-build-oci-ta
     pipelines.appstudio.openshift.io/type: build
   name: component-sample-python-basic-oci-docker-build-oci-ta-on-push
