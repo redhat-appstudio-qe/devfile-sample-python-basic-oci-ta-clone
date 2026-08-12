@@ -9,9 +9,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
-      == "base-vqpvsp"
+      == "base-linswv"
   labels:
-    appstudio.openshift.io/application: application-wgma
+    appstudio.openshift.io/application: application-ihft
     appstudio.openshift.io/component: component-sample-python-basic-oci-docker-build-oci-ta
     pipelines.appstudio.openshift.io/type: build
   name: component-sample-python-basic-oci-docker-build-oci-ta-on-pull-request
@@ -254,7 +254,7 @@ spec:
         - name: name
           value: buildah-oci-ta
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah-oci-ta@sha256:dd05f6e165e256d044ed95df7c6ec4432d90c256eea15a6016fe2eccb7a9400f
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah-oci-ta@sha256:b445ffc312ccde4fc2cd2c4a97153a408016637fe33e36bb9d4b73a40b0a07d5
         - name: kind
           value: task
         resolver: bundles
