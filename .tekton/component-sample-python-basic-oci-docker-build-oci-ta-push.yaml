@@ -8,9 +8,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "base-kmquot"
+      == "base-jhmyyw"
   labels:
-    appstudio.openshift.io/application: application-hozg
+    appstudio.openshift.io/application: application-eblw
     appstudio.openshift.io/component: component-sample-python-basic-oci-docker-build-oci-ta
     pipelines.appstudio.openshift.io/type: build
   name: component-sample-python-basic-oci-docker-build-oci-ta-on-push
@@ -168,7 +168,7 @@ spec:
         - name: name
           value: git-clone-oci-ta
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/git-clone-oci-ta@sha256:4de4fdb2647394c0216042192d034fae6b117f91aa9b9e99b004682bdff7ccc7
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/git-clone-oci-ta@sha256:5e56115ccb92a1ac49432eef7255929839d02dd43f0e2d6f9557b561e7251a25
         - name: kind
           value: task
         resolver: bundles
@@ -194,7 +194,7 @@ spec:
         - name: name
           value: prefetch-dependencies-oci-ta
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/prefetch-dependencies-oci-ta@sha256:4486aaa69770d6b27c59c8df7d82e450d95dab2302aef9b8a345f2ac0fabbab0
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/prefetch-dependencies-oci-ta@sha256:c9eb789347d3c163e8d3b665793f4a2b3d11cbc1e2e2cce99a92770400fb4dd4
         - name: kind
           value: task
         resolver: bundles
@@ -251,7 +251,7 @@ spec:
         - name: name
           value: buildah-oci-ta
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah-oci-ta@sha256:86bf16f8e361a68c6678ba691222712c4590461c70e8237a55f2d56a010b53e6
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah-oci-ta@sha256:de5580c99ca52588f9b8cec452023bc7e3de470a594c99243320752d250bb2a2
         - name: kind
           value: task
         resolver: bundles
@@ -273,7 +273,7 @@ spec:
         - name: name
           value: build-image-index
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/build-image-index@sha256:8a7ea04c20f598df30f6df40cab955b51b709197f5ce691da1d9862136159ccc
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/build-image-index@sha256:714a86d454203804fe14e422b4ba8d775d9ec19e5b7922cedd55ef93a3bc9166
         - name: kind
           value: task
         resolver: bundles
