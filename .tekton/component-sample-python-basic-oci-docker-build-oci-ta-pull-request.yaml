@@ -9,9 +9,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
-      == "base-wffydm"
+      == "base-bfwwux"
   labels:
-    appstudio.openshift.io/application: application-yump
+    appstudio.openshift.io/application: application-nkwn
     appstudio.openshift.io/component: component-sample-python-basic-oci-docker-build-oci-ta
     pipelines.appstudio.openshift.io/type: build
   name: component-sample-python-basic-oci-docker-build-oci-ta-on-pull-request
@@ -150,7 +150,7 @@ spec:
         - name: name
           value: init
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/init@sha256:89035a60308af6327a38dc8505e254d724611c8260065cc7d183f9204babdc6b
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/init@sha256:4dbbfedc4edb21884fa2ad84521408d2fad090d4d34eb6c555992f8444eba40d
         - name: kind
           value: task
         resolver: bundles
@@ -254,7 +254,7 @@ spec:
         - name: name
           value: buildah-oci-ta
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah-oci-ta@sha256:de5580c99ca52588f9b8cec452023bc7e3de470a594c99243320752d250bb2a2
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah-oci-ta@sha256:63963b014d547b240323d29671ae33a02d9741dcfabba29aac465bd9c6e8648a
         - name: kind
           value: task
         resolver: bundles
@@ -489,7 +489,7 @@ spec:
         - name: name
           value: apply-tags
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/apply-tags@sha256:c0b47e3f0d4caf900647a901641ea28faa5e0158f022384d631ede31eb1229c0
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/apply-tags@sha256:f89a59d4d043fd3c545a9cb5e89b53396f1e04017c6f68da1e50626715c2d423
         - name: kind
           value: task
         resolver: bundles
@@ -512,7 +512,7 @@ spec:
         - name: name
           value: push-dockerfile-oci-ta
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/push-dockerfile-oci-ta@sha256:36ef08e1bac13b1c19e7f0963010ad906f095b4aefea6a2458095f4e1a80ea2c
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/push-dockerfile-oci-ta@sha256:ee041e2bdf5638faaca60baa171c3e13927097a0e69ed2172ccf1de5e5ee711a
         - name: kind
           value: task
         resolver: bundles
